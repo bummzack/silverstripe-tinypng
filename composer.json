@@ -1,6 +1,6 @@
 {
 	"name": "kinglozzer/silverstripe-tinypng",
-	"type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
 	"homepage": "https://github.com/kinglozzer/silverstripe-tinypng",
 	"keywords": ["silverstripe", "tinypng", "image", "compress"],
 	"authors": [
@@ -14,7 +14,21 @@
 		"issues": "https://github.com/kinglozzer/silverstripe-tinypng/issues"
 	},
 	"require": {
-		"silverstripe/framework": "^3.2",
-		"kinglozzer/tinypng": "0.1.*"
-	}
+		"silverstripe/framework": "^4.0",
+        "silverstripe/assets" : "^1.0",
+		"kinglozzer/tinypng": "^0.1"
+	},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Kinglozzer\\SSTinyPng\\": "src/",
+            "Kinglozzer\\SSTinyPng\\Tests\\": "tests/php/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
