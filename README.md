@@ -15,7 +15,7 @@ composer require kinglozzer/silverstripe-tinypng ^3.0
 Add your TinyPNG API key to your `_config.yml`:
 
 ```yml
-TinyPngImage:
+Kinglozzer\SilverStripeTinyPng\ImageExtension:
   tinypng_api_key: 'xxxx_yyyy_zzzz'
 ```
 
